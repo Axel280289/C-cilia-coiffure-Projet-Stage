@@ -1,0 +1,115 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background: $color1;
+  width: 88%;
+  margin: 50px auto 0;
+  height: 175px;
+  position: relative;
+
+  p {
+    text-align: center;
+    line-height: 20px;
+  }
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 25px;
+  height: 150px;
+
+  img {
+    width: 50%;
+  }
+}
+
+.footerLogo {
+  margin-top: 15px;
+  border-left: dashed 1px $marron;
+  border-right: dashed 1px $marron;
+}
+
+.fa-solid,
+.fa-regular {
+  border-bottom: dashed 1px $marron;
+  padding: 5px 60px 25px;
+  cursor: pointer;
+}
+
+.addAdress,
+.addPhone,
+.addClock,
+.addRdv {
+  padding: 20px;
+  width: 90px;
+  max-height: 85px;
+  padding: 0;
+  background-color: $color1; /* Couleur de fond de la liste déroulante */
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+  border: 2px solid $marron;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 0.7rem;
+  display: none; /* Masquer la liste déroulante par défaut */
+}
+
+.open {
+  display: block;
+}
+
+.footerLogo {
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+}
+
+.footerLogo {
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+}
+
+footer {
+  @media screen and (max-width: 780px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+footer {
+  @media screen and (max-width: 780px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.dis-off {
+  @media screen and (max-width: 660px) {
+    display: none;
+  }
+}
+
+footer {
+  @media screen and (max-width: 660px) {
+    height: 100px;
+  }
+}
+footer div {
+  @media screen and (max-width: 660px) {
+    flex-direction: row;
+    margin: 0;
+    height: 100px;
+    justify-content: center;
+  }
+}
+
+.fa-solid,
+.fa-regular {
+  @media screen and (max-width: 660px) {
+    padding: 5px;
+  }
+}

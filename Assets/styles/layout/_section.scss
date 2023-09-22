@@ -1,0 +1,92 @@
+section {
+  max-width: 85%;
+  background: $color1;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+
+  .dashed {
+    border: dashed 4px $marron;
+    padding: 20px;
+  }
+
+  h2 {
+    font-family: $font1;
+    font-size: 3rem;
+    color: $marron;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: $font2;
+    margin: 20px;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.dFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: dashed 4px $marron;
+  width: 95%;
+  margin: 25px auto;
+}
+
+.dFlex div {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 340px;
+    height: 250px;
+  }
+}
+
+.dFlex {
+  @media screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+    width: 85%;
+  }
+}
+
+.dFlex {
+  @media screen and (max-width: 450px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    img {
+      width: 240px;
+      height: 150px;
+    }
+  }
+}
+
+.dFlex div {
+  @media screen and (max-width: 450px) {
+    img {
+      width: 280px;
+      height: 180px;
+    }
+  }
+}
+
+.dFlex div {
+  @media screen and (max-width: 380px) {
+    img {
+      width: 205px;
+      height: 160px;
+    }
+  }
+}
+
+section p {
+  @media screen and (max-width: 450px) {
+    font-size: 0.7rem;
+  }
+}

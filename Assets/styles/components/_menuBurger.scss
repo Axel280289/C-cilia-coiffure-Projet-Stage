@@ -1,0 +1,68 @@
+.menu-toggle {
+  display: none; /* Masquer le bouton de menu par défaut */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 40px;
+  height: 6px;
+  background-color: $color1;
+  margin: 4px 0;
+}
+
+/* Styles pour la liste déroulante du menu */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $color1; /* Couleur de fond de la liste déroulante */
+  position: absolute;
+  top: 100px;
+  right: 1px;
+  z-index: 1;
+  border: 2px solid $marron;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none; /* Masquer la liste déroulante par défaut */
+  padding: 20px;
+}
+.menu-list li {
+  padding: 5px;
+}
+.menu-list li:hover {
+  color: $marron;
+  font-weight: bold;
+}
+.menu-link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+/* Styles pour le menu mobile ouvert */
+.menu-open {
+  display: block;
+}
+
+.menu-toggle {
+  @media screen and (max-width: 750px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 35px 0 auto;
+  }
+}
+
+.navFlex {
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}
+
+.menu-list {
+  @media screen and (max-width: 550px) {
+    width: 120px;
+  }
+}

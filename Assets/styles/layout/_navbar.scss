@@ -1,0 +1,98 @@
+.navGrid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 40%;
+    filter: brightness(150%);
+  }
+}
+
+.navFlex {
+  margin-top: 15px;
+  padding: 15px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $color1;
+    font-size: 25px;
+  }
+}
+
+nav {
+  h1 {
+    font-family: $font1;
+    font-size: 5rem;
+    text-align: center;
+    color: $color1;
+    margin-top: 100px;
+  }
+  h2 {
+    margin-top: 75px;
+    font-family: $font1;
+    font-size: 3rem;
+    text-align: center;
+    color: $color1;
+  }
+}
+
+.menu-link.active {
+  color: white;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  @media screen and (max-width: 915px) {
+    img {
+      width: 75%;
+      filter: brightness(150%);
+    }
+  }
+}
+.logo {
+  @media screen and (max-width: 540px) {
+    img {
+      width: 90%;
+      filter: brightness(150%);
+    }
+  }
+}
+
+nav h1 {
+  @media screen and (max-width: 700px) {
+    font-size: 3rem;
+  }
+}
+nav h2 {
+  @media screen and (max-width: 700px) {
+    font-size: 1.8rem;
+  }
+}
+.logo {
+  @media screen and (max-width: 320px) {
+    img {
+      width: 105%;
+      filter: brightness(150%);
+    }
+  }
+}
+
+nav h1 {
+  @media screen and (max-width: 380px) {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+}
+nav h2 {
+  @media screen and (max-width: 380px) {
+    font-size: 1rem;
+  }
+}

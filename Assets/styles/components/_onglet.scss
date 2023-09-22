@@ -1,0 +1,79 @@
+.tab-container {
+  display: flex;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.tablink {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+  max-width: 65%;
+  margin: 0 auto;
+  background: beige;
+}
+
+.tablink.active {
+  background-color: #c0c2a6; /* Couleur de fond pour l'onglet actif */
+  border-bottom: 2px solid #000; /* Bordure en bas de l'onglet actif */
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 4px dashed $marron;
+  margin: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  p {
+    border-bottom: dashed 1px $marron;
+    color: $black;
+  }
+}
+
+ul {
+  width: 25%;
+  list-style-type: none;
+  margin-left: 50px;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  color: $marron;
+}
+h3 {
+  color: $marron;
+  text-align: center;
+}
+
+.tab-content {
+  @media screen and (max-width: 470px) {
+    max-width: 100%;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+.tab-container {
+  @media screen and (max-width: 470px) {
+    max-width: 100%;
+  }
+}
+
+.tablink {
+  @media screen and (max-width: 325px) {
+    padding: 10px 17px;
+  }
+}
